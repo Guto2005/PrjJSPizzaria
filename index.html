@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/vars.css">
     <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="css/carrinho.css">
     <title>Juca Simões Pizzaria</title>
 </head>
 <body>
@@ -54,19 +56,58 @@
             </div>
         </section>
         <aside class="carrinho">
-            <h1 class="carrinho__titulo">Suas Pizzas</h1>
+            <h1 class="carrinho__tx tx--titulo">Suas Pizzas</h1>
+        <div class="carrinho__pizzas">
             <div class="carrinho__item">
-                <img src="./imagem/img-produto01.png" alt="" class="carrinho__item-img">
-                <a class="pizzas-cards__btn-add" href="#modal">
-                    <span class="fa-solid fa-circle-plus"></span>
-                </a>
-                <p class="carrinho__item-descricao">Portuguesa (G)</p>
-                <p class="carrinho__item-preco">R$ 59,90</p>
-                <div class="carrinho__qtd-controle">
-                    <button class="carrinho__item-adicionar"></button>
-                    <span class="carrinho__item-qtd"></span>
-                    <button class="carrinho__item-remover"></button>
+                <img src="./imagem/img-produto01.png" alt="" class="carrinho__img">
+                <div class="carrinho__txt">
+                    <p class="carrinho__tx">Portuguesa (G)</p>
+                    <p class="carrinho__tx">R$ 59,90</p>
                 </div>
+            </div>
+                <div class="carrinho__qtd-controle">
+                    <button class="carrinho__btn btn--adicionar">
+                        <span class="fa-solid fa-plus"></span>
+                    </button>
+                    <span class="carrinho__qtd">1</span>
+                    <button class="carrinho__btn btn--remover">
+                        <span class="fa-solid fa-minus"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="carrinho__pizzas">
+                <div class="carrinho__item">
+                    <img src="./imagem/img-produto01.png" alt="" class="carrinho__img">
+                <div class="carrinho__txt">
+                    <p class="carrinho__tx">Portuguesa (G)</p>
+                    <p class="carrinho__tx">R$ 59,90</p>
+                </div>
+                </div>
+                    <div class="carrinho__qtd-controle">
+                        <button class="carrinho__btn btn--adicionar">
+                            <span class="fa-solid fa-plus"></span>
+                        </button>
+                        <span class="carrinho__qtd">1</span>
+                        <button class="carrinho__btn btn--remover">
+                            <span class="fa-solid fa-minus"></span>
+                        </button>
+                    </div>
+            </div>
+            <div class="carrinho__calculos">
+                <p class="carrinho__tx tx--item">Subtotal: 
+                    <span class="carrinho__tx tx--valor">R$99,99</span>
+                </p>
+                <p class="carrinho__tx tx--item">Desconto 10%:
+                    <span class="carrinho__tx tx--valor">R$99,99</span>
+                </p>
+                <p class="carrinho__tx tx--total">Valor Total:
+                    <span class="carrinho__tx tx--valor-total">R$99,99</span>
+                </p>
+                <button class="carrinho__btn btn--finalizar-compra">
+                  <p>Finalizar Compra<p>  
+                </button>
+            </div>
+        </aside>
             </div>
         </aside>
     </main>
@@ -79,9 +120,9 @@
             Desenvolvido por <br> XPTO Soluções Digitais
         </div>
         <div class="rodape__redes-sociais">
-            <img src="" alt="" class="rodape__logo-face">
-            <img src="" alt="" class="rodape__logo-whatsapp">
-            <img src="" alt="" class="rodape__logo-insta">
+            <span class="fa-brands fa-facebook"></span>
+            <span class="fa-brands fa-whatsapp"></span>
+            <span class="fa-brands fa-instagram"></span>
         </div>
     </footer>
 

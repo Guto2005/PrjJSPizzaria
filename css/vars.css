@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "interBold";
+    src: url(./../fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "InterRegular";
+    src: url(./../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "InterLight";
+    src:url(./../fonts/Inter-Light.ttf);
+}
+
 :root{
-    
+    --font-destaque: "InterBold";
+    --font-normal: "InterRegular";
+    --font-light: "InterLight";
+    --bg-primary:
+
 }
