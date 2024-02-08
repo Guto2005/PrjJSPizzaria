@@ -32,6 +32,7 @@
  .modal-pizza {
     justify-content: center;
     flex-direction: column;
+    min-width: 360px;
  }
 
 .modal-pizza__btns{
@@ -41,7 +42,9 @@
 
 
 .modal-pizza__btn-fechar {
-    display: flex;
+    visibility: visible;
+    order: -1;
+    align-self: flex-end;
  }
 
 .modal-pizza__qtd {
@@ -64,4 +67,22 @@
      flex-direction: column;
      align-items: center;
  }
+}
+
+@media screen and (max-width:1024px){
+    .background-carrinho:has(.carrinho.target){
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+    }
+
+    .carrinho:target {
+        overflow-y: scroll;
+        position: absolute;
+    }
 }

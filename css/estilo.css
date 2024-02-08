@@ -13,6 +13,10 @@
         --preset--color--green: #48D05F; /* Success */
         --preset--color--red: #E92929; /* Attention */
     }
+
+a {
+    text-decoration:none;
+}
 .topo{
     font-size: 1.5rem;
     height: 136px;
@@ -121,18 +125,21 @@
     align-items: center;
     gap: 32px;
     padding: 32px 16px;
+    flex-direction:row;
 }
  
 .modal-pizza__btn-fechar {    
-    display:block;
-    width:32px;
-    padding:8px;
+    width:100px;
+    padding:16px;
+    border-radius: 32px;
+    background-color:rgb(219, 20, 20);
     text-align: center;    
-    align-self: flex-end;
-    color: #aaa;
+    align-self: flex-start;
+    color: rgb(255, 255, 255);
     font-size: 0.75rem;    
     text-decoration: none;
     visibility: hidden;
+    order: 1;
 }
  
 .modal-pizza__btn-fechar:hover {
@@ -141,8 +148,10 @@
  
  
 .modal-pizza__img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    gap: 20px;
+    align-content: flex-start;
 }
  
 .modal-pizza__detalhes {
@@ -203,13 +212,14 @@
 .modal-pizza__qtd {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
 }
  
 .modal-pizza__controle-qtd {
     display: flex;
     border-radius: 16px;
     width: 64px;
+    height: 30px;
     padding: 0px 8px;
     justify-content: center;
     align-items: center;
@@ -227,30 +237,39 @@
     font-size: 16px;
 }
  
-.modal-pizza__btns {
-    display: flex;
-    gap: 16px;
+.modal-pizza__btns-area {
+   display: flex;
+   flex-direction: row;
+   gap: 16px;
+   color: rgb(255, 255, 255);
 }
  
-.modal-pizza__btn {
+.btn--verde {
+    background-color: #48D05F;
     padding: 8px 16px;
     border-radius: 16px;
-    color: #fff;
-    border: none;
+    display: flex;
+    gap: 16px;
+    padding: 8px 16px;
+    border-radius: 16px;
+    color: white;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
  
-.modal-pizza__btn--adicionar {
-    background-color: #48D05F;
-}
- 
-.modal-pizza__btn--cancelar {
+.btn--vermelho {
     background-color: #E92929;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 16px;
     display: flex;
+    padding: 8px 16px;
+    border-radius: 16px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 
 .carrinho{
+    visibility: visible;
     display: flex;
     background-color: #E5F4FF;
     width: 504px;
@@ -260,7 +279,14 @@
     border: 1px solid black;
     text-align: center;
     margin-left: auto;
+    position: absolute;
 }
+
+.carrinho:target{
+    visibility: visible;
+    position: static;
+}
+
 .tx--titulo {
     display: flex;
     padding: 16px;
