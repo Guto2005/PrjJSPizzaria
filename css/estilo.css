@@ -17,6 +17,7 @@
 a {
     text-decoration:none;
 }
+
 .topo{
     font-size: 1.5rem;
     height: 136px;
@@ -44,7 +45,7 @@ a {
 .pizzas-cards{
     display: flex;
     align-items: center;
-    gap: 104px;
+    gap: 80px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -114,8 +115,7 @@ a {
 .modal-pizza {
     /* position: absolute;
     left: calc(50vw - 316px);
-    top: calc(50vh - 160px); */
-    width: 600px;    
+    top: calc(50vh - 160px); */   
     min-width: 400px;
     background-color: #FFF;
     border-radius: 20px;
@@ -269,7 +269,7 @@ a {
 
 
 .carrinho{
-    visibility: visible;
+    visibility: hidden;
     display: flex;
     background-color: #E5F4FF;
     width: 504px;
@@ -279,7 +279,16 @@ a {
     border: 1px solid black;
     text-align: center;
     margin-left: auto;
+    margin-top: auto;
     position: absolute;
+}
+
+.carrinho__btn-fechar{
+    justify-content: flex-end;
+    text-align: end;
+    padding-right: 40px;
+    height: 40px;
+    color: #E92929;
 }
 
 .carrinho:target{
@@ -305,24 +314,30 @@ a {
 .carrinho__item {
     display: flex;
     padding: 16px;
-    gap: 16px;
+    gap: 100px;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 .carrinho__img {
-    width: 73px;
-    height: 73px;
+    width: 80px;
+    height: 80px;
 }
 
-.carrinho__txt {
+.carrinho__text{
+    font-size: 16px;
+}
+
+.carrinho__tx {
+    display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-content: center;
 }
 
 .carrinho__qtd-controle{
     display: flex;
     gap: 20px;
-    justify-content: right;
+    height: 40px;
     width: fit-content;
     height: fit-content;
     background-color: #FFE0E0;
